@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sarwar Ahmed Emran - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <meta name="description"
+        content="Portfolio of Sarwar Ahmed Emran - CSE student, Photographer, Researcher, and Scout Leader. Skilled in C, C++, Python, Java, and Web Development.">
+    <meta name="keywords" content="Sarwar Ahmed Emran, Portfolio, CSE, Developer, Photographer, Researcher, Bangladesh">
+    <meta name="author" content="Sarwar Ahmed Emran">
+
+</head>
+
+<body>
+
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <div class="scroll-progress"></div>
+
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <h2>EMRAN</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#volunteering" class="nav-link">Volunteering</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-hamburger" id="nav-hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <canvas id="particles"></canvas>
+
+    <section id="home" class="section hero-section">
+        <div class="hero-content">
+            <img src="main.jpg" alt="Emran portrait" class="hero-img" />
+            <h1>Hey, it's <span>Sarwar Ahmed Emran</span></h1>
+            <h3>
+                <span class="typed-text"></span>
+                <span class="cursor">|</span>
+            </h3>
+            <p>
+                I am a fourth-year undergraduate in Computer Science and Engineering at Metropolitan University
+                Bangladesh, skilled in C, C++, Java, Python, and teamwork-driven academic projects. Involved in campus
+                leadership and research, I contribute to multiple clubs and research societies, focusing on innovation
+                and collaboration.
+            </p>
+            <div class="hero-social">
+                <a href="https://www.linkedin.com/in/sarwar-ahmed-emran-41a09b28a/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/SarwarAhmedEmran" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/sarwar_emran9/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/sarwarahmed.emran/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="hero-cta">
+                <a href="CV.pdf" download id="download-cv" class="btn">Download CV</a>
+                <a href="#contact" class="btn alt">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <h2>About</h2>
+        <img src="images/aboutpic.png" alt="About Me" class="about-pic" />
+        <p>
+            Currently in my fourth year of undergraduate studies in Computer Science and Engineering at Metropolitan
+            University Bangladesh, I am dedicated to both academic achievement and active campus leadership. I have
+            completed major courses including Structured Programming (SP), Data Structures (DS), Algorithm,
+            Object-Oriented Programming (OOP), Database Management System (DBMS), Compiler Construction, Computer
+            Organization and Architecture (COA), and Computer Engineering (CE), along with programming languages such as
+            C, C++, Java, Python, HTML, CSS, and JavaScript. I have contributed to multiple academic projects through
+            teamwork and collaborative initiatives.
+        </p>
+        <p>
+            My leadership experience includes roles as Secretary of the CSE Society, Secretary Program at the
+            Metropolitan University Rover Scout Group, Rover Met in the Metropolitan University Rover Scout Group,
+            former President of MUKCYF, Organising Secretary at the Knocking Collaborators Youth Foundation, Publication
+            Secretary at the Metropolitan University Research Society, and Commandant at the Metropolitan University
+            Disaster Response Unit. Deeply passionate about learning and research, I am actively involved with the
+            Centre for Strategy and Policy Innovation (CSPI) and the university’s research society, striving to explore
+            new ideas, organize events, and contribute to innovative, impactful solutions in my field.
+        </p>
+        <p>
+            Alongside my academic and leadership pursuits, I am a professional photographer and photo editor with
+            extensive experience in wedding and event photography. I specialize in capturing meaningful moments and
+            delivering high-quality, visually compelling images through expert color grading and retouching. My work
+            reflects creativity, attention to detail, and a commitment to excellence, which I continuously develop
+            through hands-on projects and client engagements.
+        </p>
+    </section>
+
+    <section id="skills" class="section skills-section stagger-section">
+        <h2>Skills</h2>
+        <div class="skills-3d-grid">
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-c.png" alt="C Logo" />
+                <span>C</span>
+            </div>
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-cpp.png" alt="C++ Logo" />
+                <span>C++</span>
+            </div>
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-python.png" alt="Python Logo" />
+                <span>Python</span>
+            </div>
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-js.png" alt="JavaScript Logo" />
+                <span>JavaScript</span>
+            </div>
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-html.png" alt="HTML Logo" />
+                <span>HTML</span>
+            </div>
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-css.png" alt="CSS Logo" />
+                <span>CSS</span>
+            </div>
+            <div class="skill-3d-card">
+                <img src="3D-logo/3d-camera.png" alt="Photography" />
+                <span>Photography</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section stagger-section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <i class="fa-solid fa-gamepad"></i>
+                <h4>3D Snake Game</h4>
+                <p>Interactive 3D snake game with levels, obstacles, sounds, and UI. HTML/CSS/JS.</p>
+                <div class="project-links">
+                    <a href="#" class="btn sm">Demo</a>
+                    <a href="https://github.com/SarwarAhmedEmran/3D-Snake-Game" target="_blank"
+                        class="btn sm alt">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fa-solid fa-camera-retro"></i>
+                <h4>Photography Portfolio</h4>
+                <p>Lead photographer of a event management company named Chitrachar.Also working as a editor of this
+                    company.</p>
+                <div class="project-links">
+                    <a href="https://www.instagram.com/sarwar_emran9/" target="_blank" class="btn sm">
+                        <i class="fa-brands fa-instagram"></i> Instagram
+                    </a>
+                </div>
+            </div>
+
+
+
+            <div class="project-card">
+                <i class="fa-solid fa-flask"></i>
+                <h4>Research & Policy (CSPI)</h4>
+                <p>Assistant at CSPI: supporting policy research, briefs, and social impact projects.</p>
+                <div class="project-links">
+                    <a href="#" class="btn sm alt">Read more</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <i class="fa-solid fa-user-circle"></i>
+                <h4>My Portfolio</h4>
+                <p>This personal portfolio website, built with HTML, CSS, and JavaScript to showcase my skills and
+                    projects.</p>
+                <div class="project-links">
+                    <a href="#" class="btn sm">Demo</a>
+                    <a href="https://github.com/SarwarAhmedEmran/Emran-s-Portfolio-" target="_blank"
+                        class="btn sm alt">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <h4>Tutoring</h4>
+                <p>Private tutoring in core subjects; focus on clarity, fundamentals, and exam prep.</p>
+            </div>
+
+            <div class="project-card">
+                <i class="fa-solid fa-water"></i>
+                <h4>Flood Detection System</h4>
+                <p>A machine learning-based system that predicts flood risks using historical weather data for improved
+                    disaster preparedness.</p>
+                <div class="project-links">
+                    <a href="#" class="btn sm">Demo</a>
+                    <a href="https://github.com/SarwarAhmedEmran/Flood-Detection-System" target="_blank"
+                        class="btn sm alt">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <i class="fa-solid fa-utensils"></i>
+                <h4>Finding Recipe with Food Item Name</h4>
+                <p>This is a dynamic recipe finder web app that lets you search for meals by ingredient, featuring a
+                    playful animation, customizable themes, and a weekly meal planner.</p>
+                <div class="project-links">
+                    <a href="#" class="btn sm">Demo</a>
+                    <a href="https://github.com/SarwarAhmedEmran/Meal-Finder-Web-App" target="_blank"
+                        class="btn sm alt">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="experience" class="section experience-section stagger-section">
+        <h2>Experience</h2>
+        <ul class="timeline">
+            <li>
+                <h3>Assistant, CSPI <span>(2025 – Present)</span></h3>
+                <p>Supporting policy research, strategic development, and social impact projects.</p>
+            </li>
+            <li>
+                <h3>Lead Photographer, Chitrachar <span>(2024 – Present)</span></h3>
+                <p>Leading photography services for weddings and events.</p>
+            </li>
+            <li>
+                <h3>Photo & Video Editor <span>(2024 – Present)</span></h3>
+                <p>Part-time editing for a wedding business.</p>
+            </li>
+            <li>
+                <h3>Private Tutor <span>(2022 – Present)</span></h3>
+                <p>Teaching various subjects to students.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="education" class="section education-section stagger-section">
+        <h2>Education</h2>
+        <div class="education-cards">
+            <div class="education-card">
+                <h4>BSc in Computer Science & Engineering</h4>
+                <span>Metropolitan University, Sylhet</span>
+                <span>2022–Present (4th Year 2nd Semester)</span>
+            </div>
+            <div class="education-card">
+                <h4>Higher Secondary Certificate (Science)</h4>
+                <span>Sylhet Government College</span>
+                <span>2018–2019 (CGPA: 5.00)</span>
+            </div>
+            <div class="education-card">
+                <h4>Secondary School Certificate (Science)</h4>
+                <span>Balaganj Govt Dawrokanath High School</span>
+                <span>2016–2017 (CGPA: 5.00)</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteering" class="section volunteering-section stagger-section">
+        <h2>Volunteering</h2>
+        <ul class="timeline">
+            <li>
+                <h3>Scout & Rover Scout <span>(2013 – Present)</span></h3>
+                <p>Courses: Patrol Leader(2016), MET course(2023). Camps: 6th Sylhet
+                    District Assembly(2017), 2nd COMDECA(2017), PS Award Camp(2019), Rover Moot(2024).</p>
+            </li>
+            <li>
+                <h3>MU Disaster Response Unit <span>(2024–Present)</span></h3>
+                <p>Commandant — Research and Intelligent.
+                    Distributed relief,medicine and clothes in disaster moments.
+                </p>
+            </li>
+            <li>
+                <h3>KCYF <span>(2022–March 2025)</span></h3>
+                <p>Leadership summits,public speaking competetion, project ramadan, clothing drives, debate events,
+                    flood relief.</p>
+            </li>
+            <li>
+                <h3>Animal Rescue</h3>
+                <p>Independently rescued and rehabilitated 10+ cats.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="achievements" class="section achievements-section stagger-section">
+        <h2>Achievements</h2>
+        <div class="badges">
+            <div class="badge">
+                <i class="fa-solid fa-trophy"></i>
+                <h4>Winner — MU Inter Debate competetion 2023</h4>
+            </div>
+            <div class="badge">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h4>Convenor — KCYF public Speaking Carnival 2024</h4>
+            </div>
+            <div class="badge">
+                <i class="fa-solid fa-id-badge"></i>
+                <h4>Leadership & Society Roles</h4>
+                <p>Student Secretary (CSE Society), Secretary Program and RM (MU Rover Scout), Commandant (MUDRU),
+                    Publication Secretary (MURS), Ex-President (MUKCYF), Formar Organising Secretry (KCYF)</p>
+            </div>
+            <div class="badge">
+                <i class="fa-solid fa-network-wired"></i>
+                <h4>Govt. Courses</h4>
+                <p>6 month Course on Freelancing & 3 month Course on Networking by Youth Development Office</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section stagger-section">
+        <h2>Photography Gallery</h2>
+
+        <h3>Volunteering</h3>
+        <div class="gallery-segment">
+            <img src="images/volunteering1.jpg" class="gallery-item" alt="Volunteering Photo 1" />
+            <img src="images/volunteering2.jpg" class="gallery-item" alt="Volunteering Photo 2" />
+            <img src="images/volunteering4.jpg" class="gallery-item" alt="Volunteering Photo 3" />
+            <img src="images/volunteering3.jpg" class="gallery-item" alt="Volunteering Photo 4" />
+            <img src="images/volunteering5.jpg" class="gallery-item" alt="Volunteering Photo 5" />
+            <img src="images/volunteering6.jpg" class="gallery-item" alt="Volunteering Photo 6" />
+            <img src="images/volunteering7.jpg" class="gallery-item" alt="Volunteering Photo 7" />
+            <img src="images/volunteering8.jpg" class="gallery-item" alt="Volunteering Photo 8" />
+        </div>
+
+        <h3>Photography</h3>
+        <div class="gallery-segment">
+            <img src="images/photography1.jpg" class="gallery-item" alt="Photography Photo 1" />
+            <img src="images/photography2.jpg" class="gallery-item" alt="Photography Photo 2" />
+            <img src="images/photography3.jpg" class="gallery-item" alt="Photography Photo 3" />
+            <img src="images/photography4.jpg" class="gallery-item" alt="Photography Photo 4" />
+            <img src="images/photography5.jpg" class="gallery-item" alt="Photography Photo 5" />
+            <img src="images/photography6.jpg" class="gallery-item" alt="Photography Photo 6" />
+        </div>
+
+        <h3>Leadership</h3>
+        <div class="gallery-segment">
+            <img src="images/leadership1.jpg" class="gallery-item" alt="Leadership Photo 1" />
+            <img src="images/leadership2.jpg" class="gallery-item" alt="Leadership Photo 2" />
+            <img src="images/leadership3.jpg" class="gallery-item" alt="Leadership Photo 3" />
+            <img src="images/leadership4.jpg" class="gallery-item" alt="Leadership Photo 4" />
+            <img src="images/leadership5.jpg" class="gallery-item" alt="Leadership Photo 5" />
+            <img src="images/leadership6.jpg" class="gallery-item" alt="Leadership Photo 6" />
+            <img src="images/leadership7.jpg" class="gallery-item" alt="Leadership Photo 7" />
+        </div>
+
+        <div id="lightbox" class="lightbox hidden">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-img" src="" alt="Preview" />
+        </div>
+    </section>
+
+
+    <div id="lightbox" class="lightbox hidden">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" src="" alt="Preview" />
+    </div>
+    </section>
+    <section id="contact" class="section contact-section">
+        <h2>Contact</h2>
+        <form id="contact-form" action="https://formspree.io/f/xqayedor" method="POST" autocomplete="off">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="email" placeholder="Your Email" required />
+            <textarea name="message" placeholder="Your Message" required></textarea>
+
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <div class="contact-info">
+            <p><b>Email:</b> <a href="mailto:sarwaremran69@gmail.com">sarwaremran69@gmail.com</a></p>
+            <p><b>Phone:</b> <a href="tel:+8801606439842">+8801606439842</a></p>
+        </div>
+    </section>
+
+
+    <a id="contact-fab" class="fab contact-fab" href="#contact"><i class="fa-solid fa-envelope"></i></a>
+    <a id="cv-fab" class="fab cv-fab" href="CV.pdf" download><i class="fa-solid fa-file-arrow-down"></i></a>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
